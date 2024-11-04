@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDos</title>
+		<link rel="stylesheet" href="ToDo.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="box left-box">
+				<h3 class="title">todos</h3>
+				<small>
+					1. Left click to toggle completed. <br />
+					2. Right click to delete todo
+				</small>
+			</div>
+
+			<div class="right-box">
+				<div class="top-boxes">
+					<div class="box">
+						<form id="form1">
+							<input
+								type="text"
+								id="input1"
+								class="input"
+								placeholder="Important & urgent"
+								autocomplete="off"
+							/>
+							<ul class="todos" id="todos1"></ul>
+						</form>
+					</div>
+
+					<div class="box">
+						<form id="form2">
+							<input
+								type="text"
+								id="input2"
+								class="input"
+								placeholder="Not important & urgent"
+								autocomplete="off"
+							/>
+							<ul class="todos" id="todos2"></ul>
+						</form>
+					</div>
+				</div>
+
+				<div class="bottom-boxes">
+					<div class="box">
+						<form id="form3">
+							<input
+								type="text"
+								id="input3"
+								class="input"
+								placeholder="Important & not urgent"
+								autocomplete="off"
+							/>
+							<ul class="todos" id="todos3"></ul>
+						</form>
+					</div>
+
+					<div class="box">
+						<form id="form4">
+							<input
+								type="text"
+								id="input4"
+								class="input"
+								placeholder="Not important & not urgent"
+								autocomplete="off"
+							/>
+							<ul class="todos" id="todos4"></ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="ToDo.js"></script>
+	</body>
+</html>
