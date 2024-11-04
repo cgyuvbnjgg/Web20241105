@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
+/* 媒体查询:当屏幕宽度小于600px时要改变的css,一般<600px就是手机 */
+@media (max-width: 600px) {
+	.show-side-bar {
+		display: none;
+	}
+	/* 内容栏和数据栏flex方向改为竖向 */
+	.turn-column {
+		flex-direction: column;
+	}
+	/* 右区加左外边距 */
+	.right-area {
+		margin-left: 8px;
+	}
+	/* 数据块外边距，大小改为自动宽高 */
+	.data-area {
+		margin: 0 0 8px;
+		flex: auto;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
